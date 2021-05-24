@@ -4,122 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/e97b8c85c7.js"
-      crossorigin="anonymous"
-    ></script>
-    <title>D.A Shop</title>
+    <title>Đăng nhập</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
     <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          <form action="" class="sign-in-form">
-            <h2 class="title">Đăng nhập</h2>
-            <div class="input-field">
-              <span class="fas fa-user"></span>
-              <input type="email" name="email" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <span class="fas fa-lock"></span>
-              <input type="password" name="password" placeholder="Mật khẩu" />
-            </div>
-            <input type="submit" value="Login" class="btn solid" />
-            <p class="social-text">Đăng nhập bằng hình thức khác</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <span class="fab fa-facebook-f"></span>
-              </a>
-              <a href="#" class="social-icon">
-                <span class="fab fa-twitter"></span>
-              </a>
-              <a href="#" class="social-icon">
-                <span class="fab fa-google"></span>
-              </a>
-              <a href="#" class="social-icon">
-                <span class="fab fa-linkedin-in"></span>
-              </a>
-            </div>
-          </form>
-
-          <form action="" class="sign-up-form">
-            <h2 class="title">Đăng ký</h2>
-            <div class="input-field">
-              <span class="fas fa-user"></span>
-              <input type="text" name="first_name" placeholder="Họ" />
-            </div>
-            <div class="input-field">
-              <span class="fas fa-user"></span>
-              <input type="text" name="last_name" placeholder="Tên" />
-            </div>
-            <div class="input-field">
-              <span class="fas fa-calendar-day"></span>
-              <input type="date" name="date" placeholder="Ngày sinh" />
-            </div>
-            <div class="input-field">
-              <span class="fas fa-envelope"></span>
-              <input type="email" name="email" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <span class="fas fa-lock"></span>
-              <input type="password" name="password" placeholder="Mật khẩu" />
-            </div>
-            <div class="input-field">
-              <span class="fas fa-phone-square"></span>
-              <input
-                type="tel"
-                placeholder="Số điện thoại"
-                pattern="[0-9]{3}[0-9]{4}[0-9]{3}"
-                name="phone"
-              />
-            </div>
-            <div class="input-field">
-              <span class="fas fa-street-view"></span>
-              <input type="text" name="address" placeholder="Địa chỉ" />
-            </div>
-            <input type="submit" value="Sign up" class="btn solid" />
-            <p class="social-text">Đăng ký bằng hình thức khác</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <span class="fab fa-facebook-f"></span>
-              </a>
-              <a href="#" class="social-icon">
-                <span class="fab fa-twitter"></span>
-              </a>
-              <a href="#" class="social-icon">
-                <span class="fab fa-google"></span>
-              </a>
-              <a href="#" class="social-icon">
-                <span class="fab fa-linkedin-in"></span>
-              </a>
-            </div>
-          </form>
+      <form action="#">
+        <div class="title">Đăng nhập</div>
+        <div class="input-box">
+          <input type="text" name="username" placeholder="Nhập email của bạn" required />
+          <div class="underline"></div>
         </div>
-      </div>
-      <div class="panels-container">
-        <div class="panel left-panel">
-          <div class="content">
-            <h3>Về đăng nhập</h3>
-            <p>
-              Khám phá nhiều món đồ mới và lạ
-            </p>
-            <button class="btn transparent" id="sign-up-btn">Đăng nhập</button>
-          </div>
-          <img src="img/login.svg" class="image" alt="" />
+        <div class="input-box">
+          <input type="password" name="password" placeholder="Nhập mật khẩu của bạn" required />
+          <div class="underline"></div>
         </div>
-        <div class="panel right-panel">
-          <div class="content">
-            <h3>Về đăng ký</h3>
-            <p>
-              Trở thành khách hàng của chúng tôi
-            </p>
-            <button class="btn transparent" id="sign-in-btn">Đăng ký</button>
-          </div>
-          <img src="img/register.svg" class="image" alt="" />
+        <div class="input-box">
+          <input type="submit" value="Đăng nhập" />
         </div>
+      </form>
+      <div class="linkA">
+        <p><a href="/src/register.html">Chưa có tài khoản</a></p>
+        <p><a href="#">Quên mật khẩu?</a></p>
       </div>
     </div>
-    <script src="app.js"></script>
   </body>
 </html>
