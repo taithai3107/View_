@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kiểm tra đơn hàng</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- library validate -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.js"></script>
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Kiểm tra đơn hàng</h2>
+    <div class="row">
+      <div class="col-75">
+        <div class="container">
+          <form id="validate" action="">
+            <div class="row">
+              <div class="col-50">
+                <h3>Xác nhận thông tin</h3>
+                <label for="fname"><i class="fa fa-user"></i> Họ và tên</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="name"
+                  placeholder="Tài Đẹp Trai"
+                  required
+                />
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="deptrai@gmail.com"
+                  required
+                />
+                <label for="adr"
+                  ><i class="fa fa-address-card-o"></i> Địa chỉ</label
+                >
+                <input
+                  type="text"
+                  id="adr"
+                  name="address"
+                  placeholder="Số 3 Cao Lỗ, Phường 6, Quận 8"
+                  required
+                />
+                <label for="phone"
+                  ><i class="fa fa-mobile"></i> Số điện thoại</label
+                >
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  placeholder="0001113334"
+                  required
+                />
+                <label for="fname">Chấp nhận các loại thanh toán</label>
+                <div class="icon-container">
+                  <i class="fa fa-cc-visa" style="color: navy"></i>
+                  <i class="fa fa-cc-amex" style="color: blue"></i>
+                  <i class="fa fa-cc-mastercard" style="color: red"></i>
+                  <i class="fa fa-cc-discover" style="color: orange"></i>
+                </div>
+              </div>
+            </div>
+            <label>
+              <input type="checkbox" checked="checked" name="sameadr" />
+              Thanh toán khi nhận hàng
+            </label>
+            <input type="submit" value="Tiếp tục thanh toán" class="btn" />
+          </form>
+        </div>
+      </div>
+      <div class="col-25">
+        <div class="container">
+          <h4>
+            Cart
+            <span class="price" style="color: black"
+              ><i class="fa fa-shopping-cart"></i> <b>4</b></span
+            >
+          </h4>
+          <p>
+            <a href="#"><img src="images/product3.jpg" alt="" class="img" /></a>
+            <span class="price">300.000VND</span>
+          </p>
+          <p>
+            <a href="#"><img src="images/product3.jpg" alt="" class="img" /></a>
+            <span class="price">300.000VND</span>
+          </p>
+          <p>
+            <a href="#"><img src="images/product3.jpg" alt="" class="img" /></a>
+            <span class="price">300.000VND</span>
+          </p>
+          <p>
+            <a href="#"><img src="images/product3.jpg" alt="" class="img" /></a>
+            <span class="price">300.000VND</span>
+          </p>
+          <hr />
+          <p>
+            Tổng tiền
+            <span class="price" style="color: black"><b>300.000VND</b></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- script validate js -->
+    <script>
+      $("#validate").validate({
+        roles: {
+          name: {
+            required: true,
+          },
+          email: {
+            required: true,
+          },
+          address: {
+            required: true,
+          },
+          phone: {
+            required: true,
+          },
+          state: {
+            required: true,
+          },
+          zip: {
+            required: true,
+          },
+          cardname: {
+            required: true,
+          },
+          cardnumber: {
+            required: true,
+          },
+          expmonth: {
+            required: true,
+          },
+          expyear: {
+            required: true,
+          },
+          cvv: {
+            required: true,
+          },
+        },
+        messages: {
+          name: "Vui lòng nhập tên*",
+          email: "Vui lòng nhập email*",
+          phone: "Vui lòng nhập số điện thoại*",
+          address: "Vui lòng nhập địa chỉ*",
+        },
+      });
+    </script>
+  </body>
+</html>

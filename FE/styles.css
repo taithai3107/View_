@@ -290,9 +290,9 @@ nav .wrapper {
     overflow: hidden;
   }
 
-  #showdrop1:checked ~ .drop-menu1,
-  #showdrop2:checked ~ .drop-menu2,
-  #showMega:checked ~ .mega-box {
+  #showdrop1:checked~.drop-menu1,
+  #showdrop2:checked~.drop-menu2,
+  #showMega:checked~.mega-box {
     max-height: 100%;
   }
 
@@ -423,6 +423,7 @@ nav .wrapper {
   margin-bottom: 1rem;
   line-height: 1.2;
 }
+
 .hero .left small {
   display: block;
   font-size: 1.6rem;
@@ -733,6 +734,58 @@ nav .wrapper {
   }
 }
 
+/* Comment */
+.comment-box {
+  position: relative;
+}
+
+.comment-box h2 {
+  text-align: center;
+}
+
+.comment-box form {
+  text-align: left;
+}
+
+.comment-box textarea {
+  margin: 50px;
+  width: 793px;
+  height: 188px;
+}
+
+.btnCmt {
+  width: 100px;
+  height: 43px;
+  margin: 50px;
+  position: absolute;
+  top: 250px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: #fff;
+}
+
+.box-comment{
+  position: relative;
+}
+
+.box-comment h3{
+  margin: 50px;
+}
+.border-comment{
+ border-top: 3px solid #9b59b6;
+}
+
+.box-chat{
+  display: flex;
+  align-items: center;
+}
+.box-chat img{
+  border: 1px solid #000;
+  margin-left: 50px;
+  border-radius: 49px;
+}
+.box-chat-1 p{
+  margin: 50px;
+}
 /* ADVERTS */
 .advert .advert-layout {
   display: grid;
