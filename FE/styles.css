@@ -93,7 +93,8 @@ nav .wrapper {
 }
 
 .wrapper .logo a {
-  color: var(--primary);
+  color: #fff;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
   font-size: 2.7rem;
   font-weight: 600;
   padding: 0.5rem;
@@ -763,29 +764,37 @@ nav .wrapper {
   color: #fff;
 }
 
-.box-comment{
+.comment-box1 {
+  display: flex;
+}
+
+.box-comment {
   position: relative;
 }
 
-.box-comment h3{
+.box-comment h3 {
   margin: 50px;
 }
-.border-comment{
- border-top: 3px solid #9b59b6;
+
+.border-comment {
+  border-top: 3px solid #9b59b6;
 }
 
-.box-chat{
+.box-chat {
   display: flex;
   align-items: center;
 }
-.box-chat img{
+
+.box-chat img {
   border: 1px solid #000;
   margin-left: 50px;
   border-radius: 49px;
 }
-.box-chat-1 p{
+
+.box-chat-1 p {
   margin: 50px;
 }
+
 /* ADVERTS */
 .advert .advert-layout {
   display: grid;
@@ -973,7 +982,7 @@ nav .wrapper {
 }
 
 table {
-  width: 100%;
+  width: 76%;
   border-collapse: collapse;
 }
 
@@ -990,7 +999,7 @@ th {
   text-align: left;
   padding: 0.5rem;
   color: var(--white);
-  background-color: var(--primary);
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
   font-weight: normal;
 }
 
@@ -1017,34 +1026,50 @@ td img {
 
 .total-price {
   display: flex;
-  justify-content: flex-end;
-  align-items: end;
+  justify-content: start;
+  align-items: center;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 0rem;
+  margin-left: 5rem;
 }
 
 .total-price a {
   display: inline-block;
-  background-color: var(--primary);
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
   color: var(--white);
   padding: 0.7rem 1.6rem;
   font-weight: 700;
   border-radius: 3rem;
+  margin: 10px;
 }
 
 .total-price table {
-  border-top: 3px solid var(--primary);
-  width: 100%;
+  border-top: 29px solid #9b59b6;
+
+  width: 110%;
   max-width: 35rem;
 }
 
-td:last-child {
-  text-align: right;
+.total-price .trPrice{
+  border-top: 1px solid #5d96a9;
 }
 
-th:last-child {
-  text-align: right;
+.cart button {
+  display: inline-block;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: var(--white);
+  width: 90px;
+  height: 30px;
+  font-weight: 600;
 }
+
+/* td:last-child {
+  text-align: right;
+} */
+
+/* th:last-child {
+  text-align: right;
+} */
 
 @media only screen and (max-width: 567px) {
   .cart-info p {
@@ -1170,6 +1195,8 @@ th:last-child {
   text-transform: uppercase;
   margin-bottom: 2rem;
 }
+
+
 
 @media only screen and (max-width: 996px) {
   .product-detail .left {
