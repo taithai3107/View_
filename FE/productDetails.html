@@ -117,27 +117,28 @@
       </div>
       <div class="right">
         <span>Trang chủ/ Áo</span>
+        <form class="form">
         <h1> Sản phẩm</h1>
         <div class="price">100.000 VNĐ</div>
-        <form>
-          <div>
-            <select>
-              <option value="Chọn size" selected disabled>
-                Chọn Size
-              </option>
-              <option value="1">32</option>
-              <option value="2">42</option>
-              <option value="3">52</option>
-              <option value="4">62</option>
-            </select>
-            <span><i class="fas fa-chevron-down"></i></span>
+        
+          <div class="btnRadio">
+            <input type="radio" id="size" name="size" value="M">
+            <label for="M">M</label><br>
+            <input type="radio" id="size" name="size" value="S">
+            <label for="S">S</label><br>
+            <input type="radio" id="size" name="size" value="L">
+            <label for="L">L</label><br>
+            <input type="radio" id="size" name="size" value="XL">
+            <label for="XL">XL</label>
           </div>
-        </form>
+       
 
-        <form class="form">
-          <input type="text" placeholder="1" />
+          <div class="inputPrice">
+            <input class="inputPrice" type="number" value="1" />
+          </div>
+          
           <a href="cart.html" class="addCart">Thêm giỏ hàng</a>
-        </form>
+        
         <h3>Chi tiết sản phẩm</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero minima
@@ -145,6 +146,7 @@
           voluptas facilis dicta in explicabo, laboriosam ipsam suscipit!
         </p>
       </div>
+    </form>
     </div>
   </section>
 

@@ -1050,7 +1050,7 @@ td img {
   max-width: 35rem;
 }
 
-.total-price .trPrice{
+.total-price .trPrice {
   border-top: 1px solid #5d96a9;
 }
 
@@ -1146,10 +1146,12 @@ td img {
 }
 
 .product-detail .right div {
-  display: inline-block;
+  display: flex;
   position: relative;
   z-index: 1;
+  margin-bottom: 2rem;
 }
+
 
 .product-detail .right select {
   font-family: "Poppins", sans-serif;
@@ -1177,15 +1179,21 @@ td img {
   margin-bottom: 3rem;
 }
 
-.product-detail .form input {
+.product-detail .form .inputPrice input {
   padding: 0.8rem;
   text-align: center;
-  width: 3.5rem;
+  width: 5.5rem;
   margin-right: 2rem;
 }
 
+.product-detail .form .btnRadio input {
+  width: 3.5rem;
+  margin-right: 0rem;
+  height: 16px;
+}
+
 .product-detail .form .addCart {
-  background: var(--primary);
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
   padding: 0.8rem 2rem;
   color: var(--white);
   border-radius: 3rem;
@@ -1194,8 +1202,117 @@ td img {
 .product-detail h3 {
   text-transform: uppercase;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
+
+/* INVOICE */
+.invoice-box {
+  max-width: 800px;
+  margin: auto;
+  padding: 30px;
+  border: 1px solid #eee;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+  color: #555;
+}
+
+.invoice-box table {
+  width: 100%;
+  line-height: inherit;
+  text-align: left;
+}
+
+.invoice-box table td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+.invoice-box table tr td:nth-child(2) {
+  text-align: right;
+}
+
+.invoice-box table tr.top table td {
+  padding-bottom: 20px;
+}
+
+.invoice-box table tr.top table td.title {
+  font-size: 45px;
+  line-height: 45px;
+  color: #333;
+}
+
+.invoice-box table tr.information table td {
+  padding-bottom: 40px;
+}
+#infoUser{
+  text-align: left;
+}
+
+.invoice-box table tr.heading td {
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.invoice-box table tr.details td {
+  padding-bottom: 20px;
+}
+
+.invoice-box table tr.item td {
+  border-bottom: 1px solid #eee;
+}
+
+.invoice-box table tr.item.last td {
+  border-bottom: none;
+}
+
+.invoice-box table tr.total td:nth-child(1) {
+  border-top: 2px solid #eee;
+  font-weight: bold;
+}
+.invoice-box .item .tdPrice{
+  padding-top: 27px;
+}
+.invoice-box .item .iProduct{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.invoice-box .item img{
+  width: 95px;
+  margin-right: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .invoice-box table tr.top table td {
+      width: 100%;
+      display: block;
+      text-align: center;
+  }
+
+  .invoice-box table tr.information table td {
+      width: 100%;
+      display: block;
+      text-align: center;
+  }
+}
+
+/** RTL **/
+.invoice-box.rtl {
+  direction: rtl;
+  font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+}
+
+.invoice-box.rtl table {
+  text-align: right;
+}
+
+.invoice-box.rtl table tr td:nth-child(2) {
+  text-align: left;
+}
 
 
 @media only screen and (max-width: 996px) {
